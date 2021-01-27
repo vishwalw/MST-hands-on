@@ -29,7 +29,7 @@ const rootStore = types
     }
     function deleteTodo(id) {
       console.log("deltetodo", id);
-      //   console.log(store.todos);
+      console.log(store.todos);
       //   self.todos.forEach((todo) => console.log("loop todo", todo));
       store.todos = self.todos.filter((todo) => todo.id !== id);
       //   console.log(values(self.todos.filter((todo) => todo.name !== name)));
@@ -42,8 +42,8 @@ const store = rootStore.create({
   todos: [
     {
       id: 1,
-      name: "Vishwa",
-      done: true,
+      name: "",
+      done: false,
     },
   ],
 });

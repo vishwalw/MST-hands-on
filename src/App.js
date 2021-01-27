@@ -10,14 +10,7 @@ const randomId = () => Math.floor(Math.random() * 1000);
 
 const App = observer((props) => {
   return (
-    <div
-      style={{
-        border: "1px solid black",
-        padding: "10px",
-        margin: "auto",
-        width: "80%",
-      }}
-    >
+    <div>
       <button onClick={(e) => props.store.addTodo(randomId(), "New Task")}>
         Add Task
       </button>
